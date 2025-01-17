@@ -27,18 +27,22 @@
   </head>
   <body>
     <header class="header">
-      <img
-        src="./assets/img/omnifood-logo.png"
-        class="logo"
-        alt="Omnifood Logo"
-      />
+      <a href="#"
+        ><img
+          src="./assets/img/omnifood-logo.png"
+          class="logo"
+          alt="Omnifood Logo"
+      /></a>
+
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">How it works</a></li>
-          <li><a class="main-nav-link" href="#">Meals</a></li>
-          <li><a class="main-nav-link" href="#">Testimonials</a></li>
-          <li><a class="main-nav-link" href="#">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#meals">Meals</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
         </ul>
       </nav>
 
@@ -146,7 +150,7 @@
         </div>
       </section>
 
-      <section class="section-how">
+      <section id="how" class="section-how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
@@ -173,7 +177,7 @@
             <img
               src="./assets/img/app/app-screen-1.png"
               class="step-img"
-              srcset="Iphone app selection screen"
+              alt="Iphone app selection screen"
             />
           </div>
         </div>
@@ -184,7 +188,7 @@
             <img
               src="./assets/img/app/app-screen-2.png"
               class="step-img"
-              srcset="Meal approving plan"
+              alt="Meal approving plan"
             />
           </div>
           <div class="step-text-box">
@@ -213,13 +217,13 @@
             <img
               src="./assets/img/app/app-screen-3.png"
               class="step-img"
-              srcset="Iphone app delivery screen"
+              alt="Iphone app delivery screen"
             />
           </div>
         </div>
       </section>
 
-      <section class="section-meals">
+      <section id="meals" class="section-meals">
         <div class="container center-text">
           <span class="subheading">Meals</span>
           <h2 class="heading-secondary">
@@ -321,7 +325,7 @@
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section id="testimonials" class="section-testimonials">
         <div class="testimonials-container">
           <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -456,7 +460,7 @@
         </div>
       </section>
 
-      <section class="section-pricing">
+      <section id="pricing" class="section-pricing">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">
@@ -569,7 +573,7 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section id="cta" class="section-cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -596,6 +600,7 @@
                     id="email"
                     type="email"
                     placeholder="me@example.com"
+                    autocomplete="on"
                     required
                   />
                 </div>
